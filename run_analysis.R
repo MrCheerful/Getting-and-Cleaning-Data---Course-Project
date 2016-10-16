@@ -158,17 +158,14 @@ datalong <- melt(datac, c("subject","activity"), varsExtracted,
                  variable.name = "variable", value.name = "value" )
 
 ## Make a summary dataset with averages by variable & activity & subject
-## Note: the summary dataset is sorted by variable, then activity and subject
-## as this is potentially most convenient for future work with the data.
-## (sorting by subject, activity and then variable would be easier for 
-## quality control checking of the data set, and is readily done by 
-## adjusting the ddply statement's argument in the next line. 
-datasummary <- ddply( datalong, .(variable, activity, subject), 
+## Note: the summary dataset is sorted by subject, then activity and variable
+datasummary <- ddply( datalong, .(subject, activity, variable), 
                       summarize, avg = mean(value) )
 
 ## Save the tidy, long dataset.  (First sorted for convenience of user.)
-datalongsorted <- arrange(datalong, subject, activity, variable)
-write.table(datalongsorted, file = "data_long.txt", row.names = FALSE)
+#NOT REQUIRED FOR ASSIGNMENT, HENCE THE FOLLOWING COMMANDS COMMENTED OUT
+#datalongsorted <- arrange(datalong, subject, activity, variable)
+#write.table(datalongsorted, file = "data_long.txt", row.names = FALSE)
 
 ## Save the summary dataset.
 write.table(datasummary, file = "data_summary.txt", row.names = FALSE)

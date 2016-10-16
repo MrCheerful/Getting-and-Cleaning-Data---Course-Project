@@ -1,11 +1,15 @@
 # Getting-and-Cleaning-Data---Course-Project
 ==================================================================
-Tidying of Dataset Human Activity Recognition Using Smartphones
-Dataset Addendum 1.0
+Tidying of Dataset from Human Activity Recognition Using Smartphones
+
+Summarized Tidy Dataset 1.0
+
 Ken Melax
-16 Oct. 2016
+
+Date: 16 Oct. 2016
+
 ==================================================================
-From the original experiment data the dataset is reduced and
+From the original experiment data, the dataset is reduced and
 summarized by means of the associated script.
 
 Details of the modifications to the data are described in the 

@@ -1,8 +1,12 @@
 ==================================================================
 Tidying of Dataset Human Activity Recognition Using Smartphones
+
 Dataset Addendum 1.0
+
 Ken Melax
-16 Oct. 2016
+
+Date: 16 Oct. 2016
+
 ==================================================================
 From the original experiment data a reduced dataset is extracted
 and then summarized by means of the associated script: run_analysis.R
@@ -21,7 +25,8 @@ Transformations to the data
 Transformed data is saved in the file data_summary.txt
 
 ==================================================================
-Readme from original dataset   (further information features_info.txt follows)
+Readme from original dataset   
+(scroll down for further information from features_info.txt)
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
